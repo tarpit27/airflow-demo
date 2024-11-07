@@ -9,6 +9,8 @@ class Store:
         self.file_name = file_name
 
     def store_df(self):
-        print(type(self.df))
-        self.df.to_csv(os.getcwd() + '/data/updated/' + self.file_name + '_' + str(datetime.now()) , index=False)
+        output_location = os.getcwd() + '/data/updated/'
+        if not os.path.exists(output_location):
+            os.mkdir(output_location)
+        self.df.to_csv(output_location + self.file_name + '_' + str(datetime.now()) , index=False)
         print("Dataframe stored")

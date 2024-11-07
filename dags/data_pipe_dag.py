@@ -9,7 +9,7 @@ from app.Transform import Transform
 @dag(
     dag_id="etl_dag",
     schedule=None,
-    start_date=pendulum.datetime(2024, 11, 6, tz="UTC"),
+    start_date=pendulum.datetime(2024, 10, 1, tz="UTC"),
     catchup=False
 )
 def etl_dag():
