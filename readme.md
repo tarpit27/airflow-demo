@@ -5,3 +5,5 @@
 - airflow db migrate
 - Navigate to ~/airflow/airflow.cfg
   - Update dags_folder to the local path of dags folder in the repo
+- To start local server: airflow standalone(username and password logged in the console)
+- To run DAG on local server: airflow dags test etl_dag 2024-11-06
