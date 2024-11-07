@@ -1,5 +1,6 @@
-<li>python3 -m venv airflow-env</li>
-<li>source airflow-env/bin/activate</li>
-<li>pip install -r requirements.txt</li>
-<li>airflow db migrate</li>
-<li>Navigate to ~/airflow/airflow.cfg<li>Update dags_folder to the local path of dags folder in the repo</li></li>
+- python3 -m venv airflow-env
+- source airflow-env/bin/activate
+- pip install -r requirements.txt
+- airflow db migrate
+- Navigate to ~/airflow/airflow.cfg
+  - Update dags_folder to the local path of dags folder in the repo
